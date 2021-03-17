@@ -1,0 +1,21 @@
+.portfolio {
+    margin-top: 10%;
+    position: relative;
+    z-index: 800;
+    .slider {
+        margin-top: 5%;
+       &__wrapper {
+           .slide {
+               width: 100%;
+               text-align: center;
+           }
+       }
+       &__subheader {
+        margin-top: 5%;
+           &-arrows {
+               display: flex;
+               justify-content: space-between;
+           }
+       }
+    }
+}

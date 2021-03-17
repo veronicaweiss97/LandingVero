@@ -1,0 +1,29 @@
+$maincolor: #A0DF90;
+$grey: rgba(196, 196, 196, 0.35);
+
+
+@import 'components/header';
+@import 'components/main';
+@import 'components/about';
+@import 'components/skills';
+@import 'components/portfolio';
+@import 'components/contact';
+@import 'components/media';
+@import 'components/policy';
+
+
+
+body {
+    margin: 0;
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+.progress {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 0%;
+    height: 10px;
+    background-color: $maincolor;
+    z-index: 900;
+}

@@ -1,0 +1,205 @@
+@media(max-width: 768px) {
+    .about {
+        &_content {
+            display: inline-block;
+        }
+    }
+}
+@media (max-width: 500px) {
+    .main {
+        &_wrapper {
+            &__title {
+                font-size: 2rem;
+            }
+            &__subtitle {
+                font-size: 1.5rem;
+            }
+            &__descr {
+                font-size: 1rem; 
+            }
+        }
+    }
+    .about {
+        &_content {
+           .photo {
+               position: relative;
+               left: -1000px;
+               opacity: 0;
+               transition: left 1s, opacity 1s;
+           }
+           .photo__show {
+            opacity: 1;
+            left: -21px;
+            
+           }
+            &__descr {
+                margin-left: -1%;
+                font-size: 1rem;
+    
+            }
+            &__udemy {
+                font-size: 1rem;
+            }
+         }
+    }
+    .skills {
+        &__items {
+            display: grid;
+        grid-template-columns: repeat(auto-fit, 194px);
+        grid-auto-rows: minmax(270px, auto);
+        justify-content: space-between;
+        padding-top: 61px;
+        gap: 2px 0px;
+            .card {
+                .skills__items-cont {
+                    height: 78%;
+                }
+            }
+
+        }
+    }
+    .contact {
+        &_cont {
+            &__form {
+                .contactItem {
+                    width: 49%;
+                    input {
+                        font-size: 1rem;
+                    }
+                }
+                .contactItemEmail {
+                    input {
+                        font-size: 1rem;
+                    }
+                }
+                .contactItemText {
+                    input {
+                        font-size: 1rem;
+                    }
+                }
+                .contactItemBtn {
+                    label {
+                        font-size: 0.7rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 414px) {
+   .container {
+       width: 100%;
+       header {
+           width: 100%;
+       }
+       .main {
+        &_wrapper {
+            &__title {
+                font-size: 1rem;
+                text-align: center;
+            }
+            &__subtitle {
+                font-size: 1.5rem;
+                text-align: center;
+            }
+            &__descr {
+                font-size: 1rem;
+            }
+        }
+        
+       }
+       .about {
+        &_title {
+            font-size: 1rem;
+        }
+        &_content {
+            display: flex;
+            margin-top: 5%;
+           .photo {
+            display: none;
+           }
+           .photo__show {
+            opacity: 0;
+            
+           }
+            &__descr {
+                margin-left: 4%;
+                margin-right: 4%;
+                font-size: 1rem;
+            }
+            &__udemy {
+                font-size: 1rem;
+                margin-left: 4%;
+                margin-right: 4%;
+            }
+        }
+       }
+       .skills {
+        &_title {
+            text-align: right;
+            font-size: 1rem;
+        }
+        &__items {
+            grid-template-columns: repeat(auto-fit, 255px);
+            grid-auto-rows: minmax(250px, auto);
+            justify-content: center;
+            gap: 22px 13px;
+            .card {
+                .skills__items-cont {
+                    height: 77%;
+                    &:hover {
+                        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                    }
+                }
+            }
+       }
+   }}
+}
+@media(max-width: 320px) {
+    .container {
+        .header {
+            &_ul {
+                &__item {
+                    font-size: 0.8rem;
+                }
+            }
+        }
+        .main {
+            &_wrapper {
+                &__descr {
+                    font-size: 1rem;
+                    text-align: center;
+                }
+            }
+        }
+        .contact {
+            &_cont {
+                &__form {
+                    .contactItem {
+                        width: 45%;
+                    }
+                    .contactItemEmail {
+                        width: 94%;
+                    }
+                    .contactItemText {
+                        width: 94%;
+                    }
+                    .contactItemBtn {
+                        label:before {
+                            margin-left: -10px;
+                            width: 15px;
+                             height: 15px;
+                        }
+                    }
+                }
+            }
+        }
+        .backbutton {
+            width: 30px;
+            height: 30px;
+            right: 2%;
+            
+        }
+    }
+}

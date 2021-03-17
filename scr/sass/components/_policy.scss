@@ -1,0 +1,25 @@
+html {
+    body{
+        .main {
+            width: 100%;
+            margin: 0 auto;
+            .container {
+                width: 80%;
+                margin: 0 auto;
+                .title_main {
+                    font-size: 2rem;
+                    color: $maincolor;
+                }
+                ul {
+                    .menu__list {
+                        text-decoration: none;
+                        list-style: none;
+                        .promo__subtitle {
+                            font-size: 1.5rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

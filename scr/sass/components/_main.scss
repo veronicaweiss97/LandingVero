@@ -1,0 +1,19 @@
+.main {
+    
+    &_wrapper {
+        
+        &__title {
+            font-size: 4rem;
+            color: rgba(0, 0, 0, 0.53);
+        }
+        &__subtitle {
+            font-size: 3.5rem;
+            text-align: right;
+            
+        }
+        &__descr {
+            font-size: 2rem;
+            
+        }
+    }
+}
