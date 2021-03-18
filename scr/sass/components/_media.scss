@@ -1,11 +1,23 @@
 @media(max-width: 768px) {
-    .about {
-        &_content {
-            display: inline-block;
+    body {
+        .container {
+            .about {
+                &_content {
+                    display: inline-block;
+                }
+            }
+        }
+        .footer {
+            &_descr {
+                font-size: 1rem;
+            }
         }
     }
 }
 @media (max-width: 500px) {
+    .backbutton {
+        right: 12%;
+    }
     .main {
         &_wrapper {
             &__title {
